@@ -4,12 +4,13 @@ The purpose of this project is two-fold:
 1.  hands-on experience with socket programming
 2.  better understand application-level protocols by implementing a well-known 
 protocol, HTTP. 
-In this programming assignment, you will write an HTTP client. Students are not required to 
-implement the full HTTP specification, but only a very limited subset of it. 
-You will implement the following: 
+you will write an HTTP client.
+
+implement the following: 
 An HTTP client that constructs an HTTP request based on the user’s command line input, sends the 
 request to a Web server, receives the reply from the server, and displays the reply message on the 
 screen. You should support only IPv4 connections.
+
 Background: 
 What is HTTP? HTTP stands for Hyper Text Transfer Protocol and is used for communication among web 
 clients and servers. HTTP has a simple stateless client/server paradigm. The web client initiates a 
