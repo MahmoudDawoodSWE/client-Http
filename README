@@ -15,24 +15,10 @@ client [–p n <text>] [–r n <pr1=value1 pr2=value2 …>] <URL>
 
 The program accepts two options, `-p` and `-r`, along with a required argument `<URL>`. The options and the URL can be provided in any order. The `-p` option specifies a POST request instead of the default GET request and requires an additional argument `<text>` for the request body. The `-r` option allows specifying additional request parameters in the format `<pr1=value1 pr2=value2 ...>`.
 
-## Implementation Details
+##Implementation Details
 
 The `client.c` program parses the provided URL and constructs an HTTP request based on the command line options. It establishes a connection with the server, sends the HTTP request, receives the server's HTTP response, and displays the response on the screen.
 
 Before sending the request, the program prints the constructed request to stdout, including its length. After receiving the response and printing it, the program displays the total number of received response bytes.
 
-## Getting Started
 
-To get started with the HTTP client:
-
-1. Clone the repository: `[repository URL]`
-2. Compile the `client.c` program.
-3. Run the compiled program with appropriate command line arguments.
-
-## Contributing
-
-Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
